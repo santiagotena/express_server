@@ -1,1 +1,11 @@
+#node modules
 node_modules
+
+# misc
+.DS_Store
+
+# directories
+code_along/
+
+# environment variables
+.env
