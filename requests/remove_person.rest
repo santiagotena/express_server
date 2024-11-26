@@ -1,5 +1,17 @@
 GET http://localhost:3001/api/persons
 ###
-GET http://localhost:3001/api/persons/6744cd6fb4600e937cb37c99
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+	"name": "Santiago",
+	"number": "123"
+}
 ###
-DELETE http://localhost:3001/api/persons/2
+GET http://localhost:3001/api/persons
+###
+DELETE http://localhost:3001/api/persons/67462030852c567d17aea796
+###
+GET http://localhost:3001/api/persons/67462030852c567d17aea796
+###
+GET http://localhost:3001/api/persons/67462030852c567d17aea79
