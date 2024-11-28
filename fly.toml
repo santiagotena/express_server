@@ -1,23 +1,23 @@
-# fly.toml app configuration file generated for express-server-holy-log-2120 on 2024-11-16T16:51:40+01:00
+# fly.toml app configuration file generated for express-server-frosty-silence-1359 on 2024-11-28T20:57:44+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'express-server-holy-log-2120'
+app = 'express-server-frosty-silence-1359'
 primary_region = 'fra'
 
 [build]
 
 [env]
-  PORT = "3000" # add this
+  PORT = '3000'
 
 [http_service]
-  internal_port = 3000 # ensure that this is same as PORT
+  internal_port = 3001
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
   memory = '1gb'
